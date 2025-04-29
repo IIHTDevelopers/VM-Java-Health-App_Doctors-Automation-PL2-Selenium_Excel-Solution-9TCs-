@@ -133,7 +133,7 @@ public class LocatorsFactory extends UserActions {
 	By patientNameField = By.xpath("(//p[@class='col-md-4'])[1]");	
 	By doctorNameWhereHospitalNumberIs2312000010 = By.xpath("//div[.='Dr. Amit Shah']");
 	By searchProblemFieldErrorMessage = By.xpath("//span[.=' Select ICD-11 Code ']");
-	By saveButtonInsideIpdPage = By.xpath("(//input[@value='Save'])[2]");
+	By saveButtonInsideIpdPage = By.xpath("(//input[@value='Update'])[2]");
 	By hospitalCourseTextArea = By.xpath("//textarea[@placeholder='Hospital Course']");
 	By treatmentDuringHospitalStayTextArea = By.xpath("//textarea[@placeholder='Treatment during hospital stay']");
 	By conditionOnDischargeTextArea = By.xpath("//textarea[@placeholder='Condition']");
