@@ -39,9 +39,8 @@ public class doctor_Pages extends StartupPage {
 	By addButton = By.xpath("//input[@name='name']");
 	By searchProblemFieldErrorMessage = By.xpath("//span[.=' Select ICD-11 Code ']");
 //	Locators for TC-9
-	
 	By dischargeSummaryModule = By.xpath("//a[.='Discharge Summary']");
-	By saveButton = By.xpath("(//input[@value='Save'])[2]");
+	By updateButton = By.xpath("(//input[@value='Update'])[2]");
 
 
 	String pageName = this.getClass().getSimpleName();
@@ -368,13 +367,12 @@ public class doctor_Pages extends StartupPage {
 		}	
 		return errorMessage;
 	}
-	
 	/**@Test9
 	 * about this method performScrollingOpertaionAndVerifyTheSaveButtonIsPresent() 
 	 * @param : null
-	 * @description : On the Profile "Sonia Gandhi", Scroll to the "Discharge Summary" Module which is present in the left navigation.
+	 * @description : Scroll to the "Discharge Summary" Module which is present in the left navigation.
                       Click on "Discharge Summary" and it will navigate to the "DischargeSummary" page.
-                      Then scroll to the buttom of the page and verify that the "Save" button is present or not.
+                      Then scroll to the bottom of the page and verify that the "Update" button is present or not.
 	 * @return : Boolean
 	 * @author : Yaksha
 	 */
@@ -387,7 +385,7 @@ public class doctor_Pages extends StartupPage {
 			Thread.sleep(3000);
 			commonEvents.jsScrollToBottomOfThePage();
 			Thread.sleep(3000);
-			if(commonEvents.isDisplayed(saveButton)) {
+			if(commonEvents.isDisplayed(updateButton)) {
 				buttonIsDisplayed=true;
 			}
 		}catch(Exception e) {
